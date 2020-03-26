@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a2febc26-7703-404b-998d-0ce80413fdc3" name="ruuga" url="http://88.198.108.145">
+        <fileTransfer host="88.198.108.145" port="6791" rootFolder="/srv" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="6791" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

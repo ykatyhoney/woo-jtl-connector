@@ -1,15 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="66c8e8d3-8c44-4994-b631-c1ab0255c1d1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZfjJMAeVVMSDYUc9uXWSuCJTJc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="66c8e8d3-8c44-4994-b631-c1ab0255c1d1" name="Default Changelist" comment="" />
+      <created>1585236970253</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585236970253</updated>
+      <workItem from="1585236973065" duration="2356000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1182" y="103" key="#Deployment" timestamp="1585238289072">
+      <screen x="-1600" y="0" width="1600" height="870" />
+    </state>
+    <state x="-1182" y="103" key="#Deployment/0.0.1600.870/-1600.0.1600.870@-1600.0.1600.870" timestamp="1585238289072" />
+    <state x="-1346" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585238005442">
+      <screen x="-1600" y="0" width="1600" height="870" />
+    </state>
+    <state x="-1346" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.870/-1600.0.1600.870@-1600.0.1600.870" timestamp="1585238005442" />
+    <state x="-1299" y="77" key="SettingsEditor" timestamp="1585238729707">
+      <screen x="-1600" y="0" width="1600" height="870" />
+    </state>
+    <state x="-1299" y="77" key="SettingsEditor/0.0.1600.870/-1600.0.1600.870@-1600.0.1600.870" timestamp="1585238729707" />
     <state x="185" y="250" key="com.intellij.ide.util.TipDialog" timestamp="1585237001024">
       <screen x="0" y="0" width="1600" height="870" />
     </state>

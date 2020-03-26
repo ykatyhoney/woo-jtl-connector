@@ -395,10 +395,12 @@ This section describes how to install the plugin and get it working.
 * Enhancement - Support of WooCommerce 3
 * Enhancement - Only pull double product image once
 * Enhancement - Refactoring order item taxes for accurate tax calculation
-* Enhancement - Refactor Germanized integration
+* Enhancement - Refactor Germanized  integration
 * Enhancement - Remove minimum oder and packaging quantity validation on push
 * Fix - primary key mapper for unsupported types
 
 == Upgrade Notice ==
 
 Upgrade to the latest version to prevent unwanted behavior.
+
+============================
