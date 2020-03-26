@@ -1,0 +1,92 @@
+{
+    "title": "ProductSpecialPrice Model",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "productId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "isActive": {
+            "type": [
+                "bool",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "activeFrom": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "activeUntil": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "stockLimit": {
+            "type": [
+                "double",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "considerStockLimit": {
+            "type": [
+                "bool",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "considerDateLimit": {
+            "type": [
+                "bool",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        }
+    },
+    "required": [
+        "id",
+        "productId"
+    ]
+}

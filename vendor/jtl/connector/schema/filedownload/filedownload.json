@@ -1,0 +1,76 @@
+{
+    "title": "FileDownload Model",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "path": {
+            "type": [
+                "string"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "previewPath": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "maxDownloads": {
+            "type": [
+                "int",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "maxDays": {
+            "type": [
+                "int",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "sort": {
+            "type": [
+                "int",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "created": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        }
+    },
+    "required": [
+        "id"
+    ]
+}

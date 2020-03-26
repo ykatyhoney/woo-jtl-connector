@@ -1,0 +1,93 @@
+{
+    "title": "Currency Model",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "name": {
+            "type": [
+                "string"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "iso": {
+            "type": [
+                "string"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "nameHtml": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "factor": {
+            "type": [
+                "double",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "isDefault": {
+            "type": [
+                "bool",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "hasCurrencySignBeforeValue": {
+            "type": [
+                "bool",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "delimiterCent": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "delimiterThousand": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        }
+    },
+    "required": [
+        "id"
+    ]
+}

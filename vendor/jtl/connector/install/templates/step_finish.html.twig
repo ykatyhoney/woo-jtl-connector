@@ -1,0 +1,13 @@
+{% extends "layout/layout.html.twig" %}
+
+{% block main %}
+<div class="container">
+    <h1>{% trans "Installation finished" %}</h1>
+    <p>
+        {% set install_dir = "install/" %}
+        {% trans %}
+        The connector installation has finished. You may now delete the <code>{{ install_dir }}</code> directory from your connector directory.
+        {% endtrans %}
+    </p>
+</div>
+{% endblock %}

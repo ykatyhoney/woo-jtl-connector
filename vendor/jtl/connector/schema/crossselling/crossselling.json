@@ -1,0 +1,68 @@
+{
+    "title": "CrossSelling Model",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "crossSellingProductId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "crossSellingGroupId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "productId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        }
+    },
+    "required": [
+        "id",
+        "crossSellingProductId",
+        "crossSellingGroupId",
+        "productId"
+    ]
+}

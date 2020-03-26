@@ -1,0 +1,74 @@
+{
+    "title": "FileUpload Model",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "productId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "name": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "description": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "fileType": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "isRequired": {
+            "type": [
+                "bool",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        }
+    },
+    "required": [
+        "id",
+        "productId"
+    ]
+}

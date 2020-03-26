@@ -1,0 +1,70 @@
+{
+    "title": "TaxRate Model",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "taxZoneId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "taxClassId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "rate": {
+            "type": [
+                "double"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "priority": {
+            "type": [
+                "int",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        }
+    },
+    "required": [
+        "id",
+        "taxZoneId",
+        "taxClassId"
+    ]
+}

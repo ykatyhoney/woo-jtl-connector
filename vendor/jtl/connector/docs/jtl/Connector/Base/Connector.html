@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>jtl\Connector\Base\Connector | JTL-Connector documentation</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:jtl_Connector_Base_Connector" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">JTL-Connector documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../jtl.html">jtl</a></li>
+                                        <li><a href="../../../jtl/Connector.html">Connector</a></li>
+                                        <li><a href="../../../jtl/Connector/Base.html">Base</a></li>
+    
+                <li>Connector</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Connector
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Connector</strong>        extends <a href="../../../jtl/Connector/Core/Utilities/Singleton.html"><abbr title="jtl\Connector\Core\Utilities\Singleton">Singleton</abbr></a>        implements
+        <a href="../../../jtl/Connector/Application/IEndpointConnector.html"><abbr title="jtl\Connector\Application\IEndpointConnector">IEndpointConnector</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Base Connector</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property__instances">
+                    static                    protected                                        <abbr title="jtl\Connector\Core\Utilities\multiple:">multiple:</abbr>
+                </td>
+                <td>$_instances</td>
+                <td class="last">Array of \jtl\Connector\Core\Utilities\Singleton Objects</td>
+                <td><small>from&nbsp;<a href="../../../jtl/Connector/Core/Utilities/Singleton.html#property__instances"><abbr title="jtl\Connector\Core\Utilities\Singleton">Singleton</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_controller">
+                                        protected                                        
+                </td>
+                <td>$controller</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_keyMapper">
+                                        protected                                        
+                </td>
+                <td>$keyMapper</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tokenLoader">
+                                        protected                                        
+                </td>
+                <td>$tokenLoader</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tokenValidator">
+                                        protected                                        
+                </td>
+                <td>$tokenValidator</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_checksumLoader">
+                                        protected                                        
+                </td>
+                <td>$checksumLoader</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_eventDispatcher">
+                                        protected                                        
+                </td>
+                <td>$eventDispatcher</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_method">
+                                        protected                                        
+                </td>
+                <td>$method</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_useSuperGlobals">
+                                        protected                                        
+                </td>
+                <td>$useSuperGlobals</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_modelNamespace">
+                                        protected                                        
+                </td>
+                <td>$modelNamespace</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="jtl\Connector\Core\Utilities\Singleton:">Singleton:</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInstance">getInstance</a>()
+        
+                                            <p>Basic Singleton implementation</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Utilities/Singleton.html#method_getInstance"><abbr title="jtl\Connector\Core\Utilities\Singleton">Singleton</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p>Basic Constructor</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Utilities/Singleton.html#method___construct"><abbr title="jtl\Connector\Core\Utilities\Singleton">Singleton</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___clone">__clone</a>()
+        
+                                            <p>Clone Method</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Utilities/Singleton.html#method___clone"><abbr title="jtl\Connector\Core\Utilities\Singleton">Singleton</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initialize">initialize</a>()
+        
+                                            <p>Main initialize method</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../jtl/Connector/Application/IEndpointConnector.html"><abbr title="jtl\Connector\Application\IEndpointConnector">IEndpointConnector</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPrimaryKeyMapper">setPrimaryKeyMapper</a>(<a href="../../../jtl/Connector/Mapper/IPrimaryKeyMapper.html"><abbr title="jtl\Connector\Mapper\IPrimaryKeyMapper">IPrimaryKeyMapper</abbr></a> $mapper)
+        
+                                            <p>Setter primary key mapper</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../jtl/Connector/Mapper/IPrimaryKeyMapper.html"><abbr title="jtl\Connector\Mapper\IPrimaryKeyMapper">IPrimaryKeyMapper</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPrimaryKeyMapper">getPrimaryKeyMapper</a>()
+        
+                                            <p>Returns primary key mapper</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../jtl/Connector/Application/IEndpointConnector.html"><abbr title="jtl\Connector\Application\IEndpointConnector">IEndpointConnector</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTokenLoader">setTokenLoader</a>(<a href="../../../jtl/Connector/Authentication/ITokenLoader.html"><abbr title="jtl\Connector\Authentication\ITokenLoader">ITokenLoader</abbr></a> $tokenLoader)
+        
+                                            <p>Setter token loader</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../jtl/Connector/Authentication/ITokenLoader.html"><abbr title="jtl\Connector\Authentication\ITokenLoader">ITokenLoader</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTokenLoader">getTokenLoader</a>()
+        
+                                            <p>Returns token loader</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../jtl/Connector/Base/Connector.html"><abbr title="jtl\Connector\Base\Connector">Connector</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTokenValidator">setTokenValidator</a>(<a href="../../../jtl/Connector/Authentication/ITokenValidator.html"><abbr title="jtl\Connector\Authentication\ITokenValidator">ITokenValidator</abbr></a> $tokenValidator)
+        
+                                            <p>Setter token validator</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../jtl/Connector/Authentication/ITokenValidator.html"><abbr title="jtl\Connector\Authentication\ITokenValidator">ITokenValidator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTokenValidator">getTokenValidator</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../jtl/Connector/Application/IEndpointConnector.html"><abbr title="jtl\Connector\Application\IEndpointConnector">IEndpointConnector</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setChecksumLoader">setChecksumLoader</a>(<a href="../../../jtl/Connector/Checksum/IChecksumLoader.html"><abbr title="jtl\Connector\Checksum\IChecksumLoader">IChecksumLoader</abbr></a> $checksumLoader)
+        
+                                            <p>Setter checksum loader</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../jtl/Connector/Checksum/IChecksumLoader.html"><abbr title="jtl\Connector\Checksum\IChecksumLoader">IChecksumLoader</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getChecksumLoader">getChecksumLoader</a>()
+        
+                                            <p>Returns checksum loader</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../jtl/Connector/Base/Connector.html"><abbr title="jtl\Connector\Base\Connector">Connector</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEventDispatcher">setEventDispatcher</a>(<abbr title="Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr> $eventDispatcher)
+        
+                                            <p>Setter checksum loader</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="jtl\Connector\Base\Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEventDispatcher">getEventDispatcher</a>()
+        
+                                            <p>Returns checksum loader</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../jtl/Connector/Core/Controller/Controller.html"><abbr title="jtl\Connector\Core\Controller\Controller">Controller</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMethod">setMethod</a>(<a href="../../../jtl/Connector/Core/Rpc/Method.html"><abbr title="jtl\Connector\Core\Rpc\Method">Method</abbr></a> $method)
+        
+                                            <p>Method Setter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../jtl/Connector/Core/Rpc/Method.html"><abbr title="jtl\Connector\Core\Rpc\Method">Method</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMethod">getMethod</a>()
+        
+                                            <p>Method Getter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUseSuperGlobals">getUseSuperGlobals</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../jtl/Connector/Core/Controller/Controller.html"><abbr title="jtl\Connector\Core\Controller\Controller">Controller</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setModelNamespace">setModelNamespace</a>(string $modelNamespace)
+        
+                                            <p>Method Setter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getModelNamespace">getModelNamespace</a>()
+        
+                                            <p>Method Getter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_canHandle">canHandle</a>()
+        
+                                            <p>(non-PHPdoc)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_handle">handle</a>(<a href="../../../jtl/Connector/Core/Rpc/RequestPacket.html"><abbr title="jtl\Connector\Core\Rpc\RequestPacket">RequestPacket</abbr></a> $requestpacket)
+        
+                                            <p>(non-PHPdoc)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getController">getController</a>()
+        
+                                            <p>(non-PHPdoc)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getInstance">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Utilities/Singleton.html#method_getInstance"><abbr title="jtl\Connector\Core\Utilities\Singleton">Singleton</abbr></a> at         line 29</div>
+        <code>        static            <abbr title="jtl\Connector\Core\Utilities\Singleton:">Singleton:</abbr>
+    <strong>getInstance</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Basic Singleton implementation</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="jtl\Connector\Core\Utilities\Singleton:">Singleton:</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Utilities/Singleton.html#method___construct"><abbr title="jtl\Connector\Core\Utilities\Singleton">Singleton</abbr></a> at         line 42</div>
+        <code>            protected        
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Basic Constructor</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Utilities/Singleton.html#method___clone"><abbr title="jtl\Connector\Core\Utilities\Singleton">Singleton</abbr></a> at         line 49</div>
+        <code>final            protected        
+    <strong>__clone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clone Method</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initialize">
+        <div class="location">at         line 38</div>
+        <code>                    
+    <strong>initialize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Main initialize method</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPrimaryKeyMapper">
+        <div class="location">at         line 49</div>
+        <code>                    <a href="../../../jtl/Connector/Application/IEndpointConnector.html"><abbr title="jtl\Connector\Application\IEndpointConnector">IEndpointConnector</abbr></a>
+    <strong>setPrimaryKeyMapper</strong>(<a href="../../../jtl/Connector/Mapper/IPrimaryKeyMapper.html"><abbr title="jtl\Connector\Mapper\IPrimaryKeyMapper">IPrimaryKeyMapper</abbr></a> $mapper)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Setter primary key mapper</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../jtl/Connector/Mapper/IPrimaryKeyMapper.html"><abbr title="jtl\Connector\Mapper\IPrimaryKeyMapper">IPrimaryKeyMapper</abbr></a></td>
+                <td>$mapper</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../jtl/Connector/Application/IEndpointConnector.html"><abbr title="jtl\Connector\Application\IEndpointConnector">IEndpointConnector</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrimaryKeyMapper">
+        <div class="location">at         line 60</div>
+        <code>                    <a href="../../../jtl/Connector/Mapper/IPrimaryKeyMapper.html"><abbr title="jtl\Connector\Mapper\IPrimaryKeyMapper">IPrimaryKeyMapper</abbr></a>
+    <strong>getPrimaryKeyMapper</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns primary key mapper</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../jtl/Connector/Mapper/IPrimaryKeyMapper.html"><abbr title="jtl\Connector\Mapper\IPrimaryKeyMapper">IPrimaryKeyMapper</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTokenLoader">
+        <div class="location">at         line 71</div>
+        <code>                    <a href="../../../jtl/Connector/Application/IEndpointConnector.html"><abbr title="jtl\Connector\Application\IEndpointConnector">IEndpointConnector</abbr></a>
+    <strong>setTokenLoader</strong>(<a href="../../../jtl/Connector/Authentication/ITokenLoader.html"><abbr title="jtl\Connector\Authentication\ITokenLoader">ITokenLoader</abbr></a> $tokenLoader)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Setter token loader</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../jtl/Connector/Authentication/ITokenLoader.html"><abbr title="jtl\Connector\Authentication\ITokenLoader">ITokenLoader</abbr></a></td>
+                <td>$tokenLoader</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../jtl/Connector/Application/IEndpointConnector.html"><abbr title="jtl\Connector\Application\IEndpointConnector">IEndpointConnector</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTokenLoader">
+        <div class="location">at         line 82</div>
+        <code>                    <a href="../../../jtl/Connector/Authentication/ITokenLoader.html"><abbr title="jtl\Connector\Authentication\ITokenLoader">ITokenLoader</abbr></a>
+    <strong>getTokenLoader</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns token loader</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../jtl/Connector/Authentication/ITokenLoader.html"><abbr title="jtl\Connector\Authentication\ITokenLoader">ITokenLoader</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTokenValidator">
+        <div class="location">at         line 93</div>
+        <code>            protected        <a href="../../../jtl/Connector/Base/Connector.html"><abbr title="jtl\Connector\Base\Connector">Connector</abbr></a>
+    <strong>setTokenValidator</strong>(<a href="../../../jtl/Connector/Authentication/ITokenValidator.html"><abbr title="jtl\Connector\Authentication\ITokenValidator">ITokenValidator</abbr></a> $tokenValidator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Setter token validator</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../jtl/Connector/Authentication/ITokenValidator.html"><abbr title="jtl\Connector\Authentication\ITokenValidator">ITokenValidator</abbr></a></td>
+                <td>$tokenValidator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../jtl/Connector/Base/Connector.html"><abbr title="jtl\Connector\Base\Connector">Connector</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTokenValidator">
+        <div class="location">at         line 102</div>
+        <code>                    <a href="../../../jtl/Connector/Authentication/ITokenValidator.html"><abbr title="jtl\Connector\Authentication\ITokenValidator">ITokenValidator</abbr></a>
+    <strong>getTokenValidator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../jtl/Connector/Authentication/ITokenValidator.html"><abbr title="jtl\Connector\Authentication\ITokenValidator">ITokenValidator</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setChecksumLoader">
+        <div class="location">at         line 113</div>
+        <code>                    <a href="../../../jtl/Connector/Application/IEndpointConnector.html"><abbr title="jtl\Connector\Application\IEndpointConnector">IEndpointConnector</abbr></a>
+    <strong>setChecksumLoader</strong>(<a href="../../../jtl/Connector/Checksum/IChecksumLoader.html"><abbr title="jtl\Connector\Checksum\IChecksumLoader">IChecksumLoader</abbr></a> $checksumLoader)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Setter checksum loader</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../jtl/Connector/Checksum/IChecksumLoader.html"><abbr title="jtl\Connector\Checksum\IChecksumLoader">IChecksumLoader</abbr></a></td>
+                <td>$checksumLoader</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../jtl/Connector/Application/IEndpointConnector.html"><abbr title="jtl\Connector\Application\IEndpointConnector">IEndpointConnector</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getChecksumLoader">
+        <div class="location">at         line 124</div>
+        <code>                    <a href="../../../jtl/Connector/Checksum/IChecksumLoader.html"><abbr title="jtl\Connector\Checksum\IChecksumLoader">IChecksumLoader</abbr></a>
+    <strong>getChecksumLoader</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns checksum loader</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../jtl/Connector/Checksum/IChecksumLoader.html"><abbr title="jtl\Connector\Checksum\IChecksumLoader">IChecksumLoader</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEventDispatcher">
+        <div class="location">at         line 135</div>
+        <code>                    <a href="../../../jtl/Connector/Base/Connector.html"><abbr title="jtl\Connector\Base\Connector">Connector</abbr></a>
+    <strong>setEventDispatcher</strong>(<abbr title="Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr> $eventDispatcher)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Setter checksum loader</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr></td>
+                <td>$eventDispatcher</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../jtl/Connector/Base/Connector.html"><abbr title="jtl\Connector\Base\Connector">Connector</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEventDispatcher">
+        <div class="location">at         line 146</div>
+        <code>                    <abbr title="jtl\Connector\Base\Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr>
+    <strong>getEventDispatcher</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns checksum loader</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="jtl\Connector\Base\Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMethod">
+        <div class="location">at         line 157</div>
+        <code>                    <a href="../../../jtl/Connector/Core/Controller/Controller.html"><abbr title="jtl\Connector\Core\Controller\Controller">Controller</abbr></a>
+    <strong>setMethod</strong>(<a href="../../../jtl/Connector/Core/Rpc/Method.html"><abbr title="jtl\Connector\Core\Rpc\Method">Method</abbr></a> $method)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method Setter</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../jtl/Connector/Core/Rpc/Method.html"><abbr title="jtl\Connector\Core\Rpc\Method">Method</abbr></a></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../jtl/Connector/Core/Controller/Controller.html"><abbr title="jtl\Connector\Core\Controller\Controller">Controller</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMethod">
+        <div class="location">at         line 168</div>
+        <code>                    <a href="../../../jtl/Connector/Core/Rpc/Method.html"><abbr title="jtl\Connector\Core\Rpc\Method">Method</abbr></a>
+    <strong>getMethod</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method Getter</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../jtl/Connector/Core/Rpc/Method.html"><abbr title="jtl\Connector\Core\Rpc\Method">Method</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUseSuperGlobals">
+        <div class="location">at         line 176</div>
+        <code>                    boolean
+    <strong>getUseSuperGlobals</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setModelNamespace">
+        <div class="location">at         line 187</div>
+        <code>                    <a href="../../../jtl/Connector/Core/Controller/Controller.html"><abbr title="jtl\Connector\Core\Controller\Controller">Controller</abbr></a>
+    <strong>setModelNamespace</strong>(string $modelNamespace)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method Setter</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$modelNamespace</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../jtl/Connector/Core/Controller/Controller.html"><abbr title="jtl\Connector\Core\Controller\Controller">Controller</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModelNamespace">
+        <div class="location">at         line 202</div>
+        <code>                    string
+    <strong>getModelNamespace</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method Getter</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_canHandle">
+        <div class="location">at         line 212</div>
+        <code>                    bool
+    <strong>canHandle</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>(non-PHPdoc)</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>\jtl\Connector\Application\IEndpointConnector::canHandle()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handle">
+        <div class="location">at         line 232</div>
+        <code>                    
+    <strong>handle</strong>(<a href="../../../jtl/Connector/Core/Rpc/RequestPacket.html"><abbr title="jtl\Connector\Core\Rpc\RequestPacket">RequestPacket</abbr></a> $requestpacket)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>(non-PHPdoc)</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../jtl/Connector/Core/Rpc/RequestPacket.html"><abbr title="jtl\Connector\Core\Rpc\RequestPacket">RequestPacket</abbr></a></td>
+                <td>$requestpacket</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>\jtl\Connector\Application\IEndpointConnector::handle()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getController">
+        <div class="location">at         line 244</div>
+        <code>                    
+    <strong>getController</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>(non-PHPdoc)</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>\jtl\Connector\Application\IEndpointConnector::getController()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

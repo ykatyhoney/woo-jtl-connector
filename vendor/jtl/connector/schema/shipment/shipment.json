@@ -1,0 +1,81 @@
+{
+    "title": "Shipment Model",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "deliveryNoteId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "carrierName": {
+            "type": [
+                "string"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "trackingURL": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "identCode": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "created": {
+            "type": [
+                "string"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "note": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        }
+    },
+    "required": [
+        "id",
+        "deliveryNoteId"
+    ]
+}

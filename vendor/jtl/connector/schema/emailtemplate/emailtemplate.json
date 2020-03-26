@@ -1,0 +1,107 @@
+{
+    "title": "EmailTemplate Model",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "name": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "description": {
+            "type": [
+                "string"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "emailType": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "moduleId": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "filename": {
+            "type": [
+                "string"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "isActive": {
+            "type": [
+                "bool",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "isOii": {
+            "type": [
+                "bool"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "isAgb": {
+            "type": [
+                "bool"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "isWrb": {
+            "type": [
+                "bool"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "error": {
+            "type": [
+                "int"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        }
+    },
+    "required": [
+        "id"
+    ]
+}

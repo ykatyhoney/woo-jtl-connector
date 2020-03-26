@@ -1,0 +1,38 @@
+{
+    "title": "ProductFileDownload Model",
+    "type": "object",
+    "properties": {
+        "productId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "fileDownloadId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        }
+    },
+    "required": [
+        "productId",
+        "fileDownloadId"
+    ]
+}

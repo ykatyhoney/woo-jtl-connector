@@ -1,0 +1,76 @@
+{
+    "title": "ConfigGroup Model",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "imagePath": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "minimumSelection": {
+            "type": [
+                "int",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "maximumSelection": {
+            "type": [
+                "int",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "type": {
+            "type": [
+                "int"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "sort": {
+            "type": [
+                "int",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "comment": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        }
+    },
+    "required": [
+        "id"
+    ]
+}

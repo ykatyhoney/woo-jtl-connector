@@ -1,0 +1,65 @@
+{
+    "title": "ProductWarehouseInfo Model",
+    "type": "object",
+    "properties": {
+        "productId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "warehouseId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "stockLevel": {
+            "type": [
+                "double",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "inflowQuantity": {
+            "type": [
+                "double",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "inflowDate": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        }
+    },
+    "required": [
+        "productId",
+        "warehouseId"
+    ]
+}

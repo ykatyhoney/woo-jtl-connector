@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<ruleset name="JTL">
+  <description>JTL Software GmbH code sniffer coding standards version 1.0</description>
+
+ <!-- Include some sniffs from all around the place -->
+  <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+  <rule ref="Generic.Commenting.Todo"/>
+  <rule ref="Generic.Formatting.DisallowMultipleStatements"/>
+  <rule ref="Generic.Formatting.SpaceAfterCast"/>
+  <rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>
+  <rule ref="Generic.NamingConventions.ConstructorName"/>
+  <rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
+  <rule ref="Generic.PHP.DeprecatedFunctions"/>
+  <rule ref="Generic.PHP.DisallowShortOpenTag"/>
+  <rule ref="Generic.Strings.UnnecessaryStringConcat"/>
+  <rule ref="PEAR.ControlStructures.MultiLineCondition"/>
+  <rule ref="PEAR.Files.IncludingFile"/>
+  <rule ref="PEAR.Formatting.MultiLineAssignment"/>
+  <rule ref="Zend.Debug.CodeAnalyzer"/>
+
+<!-- Lines can be 85 chars long, but never show errors -->
+ <rule ref="Generic.Files.LineLength">
+  <properties>
+   <property name="lineLimit" value="500"/>
+   <property name="absoluteLineLimit" value="500"/>
+  </properties>
+ </rule>
+
+ <!-- Tweaks to metrics -->
+ <rule ref="Generic.Metrics.CyclomaticComplexity">
+  <properties>
+   <property name="complexity" value="10"/>
+   <property name="absoluteComplexity" value="100"/>
+  </properties>
+ </rule>
+ <rule ref="Generic.Metrics.NestingLevel">
+  <properties>
+   <property name="nestingLevel" value="5"/>
+   <property name="absoluteNestingLevel" value="50"/>
+  </properties>
+ </rule>
+</ruleset>

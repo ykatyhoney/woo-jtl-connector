@@ -1,0 +1,141 @@
+{
+    "title": "CustomerOrderItem Model",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "productId": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "shippingClassId": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "customerOrderId": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "name": {
+            "type": [
+                "string"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "sku": {
+            "type": [
+                "string"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "price": {
+            "type": [
+                "double"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "vat": {
+            "type": [
+                "double"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "quantity": {
+            "type": [
+                "int"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "type": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "unique": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "configItemId": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        }
+    },
+    "required": [
+        "id"
+    ]
+}

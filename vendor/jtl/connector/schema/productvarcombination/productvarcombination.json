@@ -1,0 +1,53 @@
+{
+    "title": "ProductVarCombination Model",
+    "type": "object",
+    "properties": {
+        "productId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "productVariationId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "productVariationValueId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        }
+    },
+    "required": [
+        "productId",
+        "productVariationId",
+        "productVariationValueId"
+    ]
+}

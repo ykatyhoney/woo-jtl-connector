@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>jtl\Connector\Database\Sqlite3 | JTL-Connector documentation</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:jtl_Connector_Database_Sqlite3" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">JTL-Connector documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../jtl.html">jtl</a></li>
+                                        <li><a href="../../../jtl/Connector.html">Connector</a></li>
+                                        <li><a href="../../../jtl/Connector/Database.html">Database</a></li>
+    
+                <li>Sqlite3</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Sqlite3
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Sqlite3</strong>        extends <a href="../../../jtl/Connector/Core/Database/Sqlite3.html"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Sqlite 3 Database Class</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>SQLITE3_OPEN_SHAREDCACHE</td>
+                <td class="last">
+                    <p><em>Sqlite 3 sharedcache value</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_isConnected">
+                                        protected                                        bool
+                </td>
+                <td>$isConnected</td>
+                <td class="last">Database connection state</td>
+                <td><small>from&nbsp;<a href="../../../jtl/Connector/Core/Database/Sqlite3.html#property_isConnected"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_db">
+                                        protected                                        <a href="../../../jtl/Connector/Core/Database/Sqlite3.html"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a>
+                </td>
+                <td>$db</td>
+                <td class="last">Sqlite 3 Database object</td>
+                <td><small>from&nbsp;<a href="../../../jtl/Connector/Core/Database/Sqlite3.html#property_db"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_location">
+                                                                                string
+                </td>
+                <td>$location</td>
+                <td class="last">Path to the SQLite database, or :memory: to use in-memory database.</td>
+                <td><small>from&nbsp;<a href="../../../jtl/Connector/Core/Database/Sqlite3.html#property_location"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mode">
+                                                                                integer
+                </td>
+                <td>$mode</td>
+                <td class="last">Optional flags used to determine how to open the SQLite database.</td>
+                <td><small>from&nbsp;<a href="../../../jtl/Connector/Core/Database/Sqlite3.html#property_mode"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_connect">connect</a>(array $options = null)
+        
+                                            <p>(non-PHPdoc)</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_connect"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___destruct">__destruct</a>()
+        
+                                            <p>Destructor</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method___destruct"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_close">close</a>()
+        
+                                            <p>(non-PHPdoc)</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_close"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_query">query</a>($query)
+        
+                                            <p>(non-PHPdoc)</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_query"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetchSingle">fetchSingle</a>($query)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_fetchSingle"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="jtl\Connector\Core\Database\SQLite3Stmt">SQLite3Stmt</abbr>|boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prepare">prepare</a>(string $query)
+        
+                                            <p>Prepares an SQL statement for execution</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_prepare"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="jtl\Connector\Core\Database\multitype:array">multitype:array</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetch">fetch</a>(string $query)
+        
+                                            <p>Sqlite Select</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_fetch"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method__exec">_exec</a>(string $query)
+        
+                                            <p>Sqlite Update or Delete</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method__exec"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="jtl\Connector\Core\Database\number">number</abbr>|boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insert">insert</a>(string $query)
+        
+                                            <p>Sqlite Insert</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_insert"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exec">exec</a>(string $query)
+        
+                                            <p>Executes a result-less query against a given database</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_exec"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isConnected">isConnected</a>()
+        
+                                            <p>(non-PHPdoc)</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_isConnected"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOptions">setOptions</a>(array $options = null)
+        
+                                            <p>Set Options</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_setOptions"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_escapeString">escapeString</a>($query)
+        
+                                            <p>(non-PHPdoc)</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_escapeString"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLastInsertRowId">getLastInsertRowId</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_getLastInsertRowId"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../jtl/Connector/Core/Database/Sqlite3.html"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInstance">getInstance</a>()
+        
+                                            <p>Singleton</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_check">check</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_connect">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_connect"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a> at         line 60</div>
+        <code>                    
+    <strong>connect</strong>(array $options = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>(non-PHPdoc)</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../jtl/Connector/Core/Exception/DatabaseException.html"><abbr title="jtl\Connector\Core\Exception\DatabaseException">DatabaseException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>\jtl\Connector\Core\Database\IDatabase::connect()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___destruct">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method___destruct"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a> at         line 84</div>
+        <code>                    
+    <strong>__destruct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Destructor</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_close">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_close"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a> at         line 96</div>
+        <code>                    
+    <strong>close</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>(non-PHPdoc)</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>\jtl\Connector\Core\Database\IDatabase::close()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_query">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_query"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a> at         line 106</div>
+        <code>                    
+    <strong>query</strong>($query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>(non-PHPdoc)</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>\jtl\Connector\Core\Database\IDatabase::query()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetchSingle">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_fetchSingle"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a> at         line 124</div>
+        <code>                    
+    <strong>fetchSingle</strong>($query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepare">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_prepare"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a> at         line 135</div>
+        <code>                    <abbr title="jtl\Connector\Core\Database\SQLite3Stmt">SQLite3Stmt</abbr>|boolean
+    <strong>prepare</strong>(string $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Prepares an SQL statement for execution</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="jtl\Connector\Core\Database\SQLite3Stmt">SQLite3Stmt</abbr>|boolean</td>
+            <td>Returns an SQLite3Stmt object on success or FALSE on failure.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetch">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_fetch"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a> at         line 146</div>
+        <code>                    <abbr title="jtl\Connector\Core\Database\multitype:array">multitype:array</abbr>
+    <strong>fetch</strong>(string $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sqlite Select</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="jtl\Connector\Core\Database\multitype:array">multitype:array</abbr></td>
+            <td>|NULL</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method__exec">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method__exec"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a> at         line 177</div>
+        <code>            protected        boolean
+    <strong>_exec</strong>(string $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sqlite Update or Delete</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_insert"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a> at         line 188</div>
+        <code>                    <abbr title="jtl\Connector\Core\Database\number">number</abbr>|boolean
+    <strong>insert</strong>(string $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sqlite Insert</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="jtl\Connector\Core\Database\number">number</abbr>|boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exec">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_exec"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a> at         line 202</div>
+        <code>                    
+    <strong>exec</strong>(string $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes a result-less query against a given database</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isConnected">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_isConnected"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a> at         line 212</div>
+        <code>                    bool
+    <strong>isConnected</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>(non-PHPdoc)</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>$this->_isConnected</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>\jtl\Connector\Core\Database\IDatabase::isConnected()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOptions">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_setOptions"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a> at         line 222</div>
+        <code>                    
+    <strong>setOptions</strong>(array $options = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Options</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_escapeString">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_escapeString"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a> at         line 241</div>
+        <code>                    string
+    <strong>escapeString</strong>($query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>(non-PHPdoc)</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>\jtl\Connector\Core\Database\IDatabase::escapeString()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLastInsertRowId">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Database/Sqlite3.html#method_getLastInsertRowId"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a> at         line 246</div>
+        <code>                    
+    <strong>getLastInsertRowId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInstance">
+        <div class="location">at         line 31</div>
+        <code>        static            <a href="../../../jtl/Connector/Core/Database/Sqlite3.html"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a>
+    <strong>getInstance</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Singleton</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../jtl/Connector/Core/Database/Sqlite3.html"><abbr title="jtl\Connector\Core\Database\Sqlite3">Sqlite3</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_check">
+        <div class="location">at         line 43</div>
+        <code>                    
+    <strong>check</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

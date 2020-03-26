@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <base href="{{ app_base }}">
+        <link rel="stylesheet" type="text/css" href="layout/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="layout/css/layout.css">
+        <link rel="stylesheet" type="text/css" href="layout/css/bootstrap-responsive.min.css">
+
+        <script type="text/javascript" src="layout/js/jquery.js"></script>
+        <script type="text/javascript" src="layout/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="layout/js/jquery.validate.js"></script>
+        <script type="text/javascript" src="layout/js/jquery.validation.functions.js"></script>
+        
+        <title>{% trans "JTL Magento Connector Installer" %}</title>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="{{ page_first_step_url }}">{% trans "JTL Magento Connector" %}</a>
+                </div>
+            </div>
+        </div>
+        
+        {% block main %}
+        {% endblock %}
+    </body>
+</html>

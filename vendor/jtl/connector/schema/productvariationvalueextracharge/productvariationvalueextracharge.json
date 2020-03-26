@@ -1,0 +1,46 @@
+{
+    "title": "ProductVariationValueExtraCharge Model",
+    "type": "object",
+    "properties": {
+        "customerGroupId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "productVariationValueId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "extraChargeNet": {
+            "type": [
+                "double"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        }
+    },
+    "required": [
+        "customerGroupId",
+        "productVariationValueId"
+    ]
+}

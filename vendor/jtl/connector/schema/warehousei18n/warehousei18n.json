@@ -1,0 +1,31 @@
+{
+    "title": "WarehouseI18n Model",
+    "type": "object",
+    "properties": {
+        "warehouseId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "name": {
+            "type": [
+                "string"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        }
+    },
+    "required": [
+        "warehouseId"
+    ]
+}

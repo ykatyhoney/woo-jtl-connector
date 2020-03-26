@@ -1,0 +1,46 @@
+{
+    "title": "SpecialPrice Model",
+    "type": "object",
+    "properties": {
+        "customerGroupId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "productSpecialPriceId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "priceNet": {
+            "type": [
+                "double"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        }
+    },
+    "required": [
+        "customerGroupId",
+        "productSpecialPriceId"
+    ]
+}

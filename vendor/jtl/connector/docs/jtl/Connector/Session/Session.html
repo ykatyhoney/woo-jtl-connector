@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>jtl\Connector\Session\Session | JTL-Connector documentation</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:jtl_Connector_Session_Session" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">JTL-Connector documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../jtl.html">jtl</a></li>
+                                        <li><a href="../../../jtl/Connector.html">Connector</a></li>
+                                        <li><a href="../../../jtl/Connector/Session.html">Session</a></li>
+    
+                <li>Session</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Session
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Session</strong>        extends <a href="../../../jtl/Connector/Core/Session/Handler.html"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Session Class</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property__db">
+                                        protected                                        <a href="../../../jtl/Connector/Core/Database/IDatabase.html"><abbr title="jtl\Connector\Core\Database\IDatabase">IDatabase</abbr></a>
+                </td>
+                <td>$_db</td>
+                <td class="last">Session Database Mapper</td>
+                <td><small>from&nbsp;<a href="../../../jtl/Connector/Core/Session/Handler.html#property__db"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__lifetime">
+                                        protected                                        integer
+                </td>
+                <td>$_lifetime</td>
+                <td class="last">Session GC Lifetime</td>
+                <td><small>from&nbsp;<a href="../../../jtl/Connector/Core/Session/Handler.html#property__lifetime"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__sessionId">
+                                        protected                                        string
+                </td>
+                <td>$_sessionId</td>
+                <td class="last">Session Id</td>
+                <td><small>from&nbsp;<a href="../../../jtl/Connector/Core/Session/Handler.html#property__sessionId"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../jtl/Connector/Core/Database/IDatabase.html"><abbr title="jtl\Connector\Core\Database\IDatabase">IDatabase</abbr></a> $db, $sessionId = null, $sessionName = &quot;jtlConnector&quot;)
+        
+                                            <p>Constructor</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Session/Handler.html#method___construct"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_check">check</a>(string $sessionId)
+        
+                                            <p>Checks if Session is Valid</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Session/Handler.html#method_check"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_open">open</a>($savePath, $sessionName)
+        
+                                            <p>Open Session</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Session/Handler.html#method_open"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_close">close</a>()
+        
+                                            <p>Close Sesssion</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Session/Handler.html#method_close"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_read">read</a>($sessionId)
+        
+                                            <p>Read Session</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Session/Handler.html#method_read"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_write">write</a>($sessionId, $sessionData)
+        
+                                            <p>Write Session</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Session/Handler.html#method_write"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_destroy">destroy</a>($sessionId)
+        
+                                            <p>Destroy Session</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Session/Handler.html#method_destroy"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_gc">gc</a>($maxLifetime)
+        
+                                            <p>Garbage Collector</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Session/Handler.html#method_gc"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSessionId">getSessionId</a>()
+        
+                                            <p>SessionId Getter</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Session/Handler.html#method_getSessionId"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="jtl\Connector\Core\Session\number">number</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLifetime">getLifetime</a>()
+        
+                                            <p>Lifetime Getter</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../jtl/Connector/Core/Session/Handler.html#method_getLifetime"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Session/Handler.html#method___construct"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a> at         line 51</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../jtl/Connector/Core/Database/IDatabase.html"><abbr title="jtl\Connector\Core\Database\IDatabase">IDatabase</abbr></a> $db, $sessionId = null, $sessionName = &quot;jtlConnector&quot;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../jtl/Connector/Core/Database/IDatabase.html"><abbr title="jtl\Connector\Core\Database\IDatabase">IDatabase</abbr></a></td>
+                <td>$db</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$sessionId</td>
+                <td>Connector session ID</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$sessionName</td>
+                <td>PHP session Name</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../jtl/Connector/Core/Exception/SessionException.html"><abbr title="jtl\Connector\Core\Exception\SessionException">SessionException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_check">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Session/Handler.html#method_check"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a> at         line 107</div>
+        <code>                    boolean
+    <strong>check</strong>(string $sessionId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if Session is Valid</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sessionId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_open">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Session/Handler.html#method_open"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a> at         line 132</div>
+        <code>                    
+    <strong>open</strong>($savePath, $sessionName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Open Session</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$savePath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$sessionName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_close">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Session/Handler.html#method_close"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a> at         line 144</div>
+        <code>                    
+    <strong>close</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Close Sesssion</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_read">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Session/Handler.html#method_read"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a> at         line 154</div>
+        <code>                    
+    <strong>read</strong>($sessionId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Read Session</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$sessionId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_write">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Session/Handler.html#method_write"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a> at         line 178</div>
+        <code>                    
+    <strong>write</strong>($sessionId, $sessionData)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Write Session</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$sessionId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$sessionData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_destroy">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Session/Handler.html#method_destroy"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a> at         line 217</div>
+        <code>                    
+    <strong>destroy</strong>($sessionId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Destroy Session</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$sessionId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_gc">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Session/Handler.html#method_gc"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a> at         line 229</div>
+        <code>                    
+    <strong>gc</strong>($maxLifetime)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Garbage Collector</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$maxLifetime</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSessionId">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Session/Handler.html#method_getSessionId"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a> at         line 241</div>
+        <code>                    string
+    <strong>getSessionId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>SessionId Getter</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLifetime">
+        <div class="location">in <a href="../../../jtl/Connector/Core/Session/Handler.html#method_getLifetime"><abbr title="jtl\Connector\Core\Session\Handler">Handler</abbr></a> at         line 251</div>
+        <code>                    <abbr title="jtl\Connector\Core\Session\number">number</abbr>
+    <strong>getLifetime</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Lifetime Getter</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="jtl\Connector\Core\Session\number">number</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,38 @@
+{
+    "title": "ProductVariationValueDependency Model",
+    "type": "object",
+    "properties": {
+        "productVariationValueId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "productVariationValueTargetId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        }
+    },
+    "required": [
+        "productVariationValueId",
+        "productVariationValueTargetId"
+    ]
+}

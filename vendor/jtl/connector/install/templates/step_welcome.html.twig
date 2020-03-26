@@ -1,0 +1,16 @@
+{% extends "layout/layout.html.twig" %}
+
+{% block main %}
+<div class="container">
+    <h1>{% trans "JTL Magento Connector Installation" %}</h1>
+    <p>
+        {% trans %}
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        {% endtrans %}
+        
+    </p>
+    <p>
+        <a href="{{ page_next_step_url }}"><button class="btn btn-primary">{% trans "Continue" %}</button></a>
+    </p>
+</div>
+{% endblock %}

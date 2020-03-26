@@ -1,0 +1,55 @@
+{
+    "title": "ConfigItemPrice Model",
+    "type": "object",
+    "properties": {
+        "configItemId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "customerGroupId": {
+            "type": [
+                "array"
+            ],
+            "optional": false,
+            "items": [
+                {
+                    "type": [
+                        "string",
+                        "int"
+                    ]
+                }
+            ]
+        },
+        "price": {
+            "type": [
+                "float"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        },
+        "type": {
+            "type": [
+                "int",
+                "null"
+            ],
+            "optional": true,
+            "items": [
+            ]
+        }
+    },
+    "required": [
+        "configItemId",
+        "customerGroupId"
+    ]
+}
