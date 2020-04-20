@@ -8,9 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,7 +16,6 @@
   <component name="ProjectId" id="1ZfjJMAeVVMSDYUc9uXWSuCJTJc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -39,11 +36,13 @@
       <updated>1585236970253</updated>
       <workItem from="1585236973065" duration="5395000" />
       <workItem from="1585716196652" duration="18000" />
+      <workItem from="1587116616789" duration="83000" />
+      <workItem from="1587116937855" duration="1721000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1182" y="103" key="#Deployment" timestamp="1585238289072">
@@ -54,6 +53,10 @@
       <screen x="-1600" y="0" width="1600" height="870" />
     </state>
     <state x="-1346" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.870/-1600.0.1600.870@-1600.0.1600.870" timestamp="1585238005442" />
+    <state x="-1120" y="170" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587116651398">
+      <screen x="-1600" y="0" width="1600" height="870" />
+    </state>
+    <state x="-1120" y="170" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1600.870/-1600.0.1600.870@-1600.0.1600.870" timestamp="1587116651398" />
     <state x="-1299" y="77" key="SettingsEditor" timestamp="1585238729707">
       <screen x="-1600" y="0" width="1600" height="870" />
     </state>

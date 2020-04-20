@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="88.198.108.145" id="a9cd18b6-2c8d-4d7a-aa77-172a6f22bd0d" port="6791" customName="ruuga" nameFormat="CUSTOM" username="automator" />
+    </configs>
+  </component>
+</project>
